@@ -1,0 +1,10 @@
+.first{
+    background-color: rebeccapurple;
+    color: #fff;
+    text-align: center;
+}
+
+
+div [class|="col"]{
+    border: 1px solid #ffc107;
+}
