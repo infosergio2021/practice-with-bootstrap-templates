@@ -5,31 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de inicio | Anses</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="#">LOGO DE ANSES</a>
-        <div>
-            <form action="" method="get">
-                <input type="text" placeholder="ingrese una palabra clave">
-                <button type="submit">icono de lupa</button>
-            </form>
-            <button>icono Mi Anses</button>
-        </div>
-        <nav>
-            barra de navegacion
-            <ul>
-                <li><a href="#">EMBARAZO Y NACIMIENTO</a></li>
-                <li><a href="#">HIJOS</a></li>
-                <li><a href="#">EDUCACIÓN</a></li>
-                <li><a href="#">TRABAJO</a></li>
-                <li><a href="#">MATRIMONIO</a></li>
-                <li><a href="#">JUBILADOS Y PENSIONADOS</a></li>
-                <li><a href="#">VIUDEZ Y FALLECIMIENTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-sm-2">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        <a class="navbar-brand" href="#"><img src="img/logo_anses_blanco.png" alt="Logo-Anses" class="img-fluid"></a>
+                    </div>
+                    <div class="col-sm-6">
+                        <form class="d-flex">
+                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-success " type="submit"> <i class="fas fa-search fa-1x"></i> </button>
+                        </form>                        
+                    </div>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Clases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Basico</a></li>
+                        <li><a class="dropdown-item" href="#">intermedio</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Avanzado</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contactanos</a>
+                    </li>
+                    </ul>
+                </div>
+
+
+            </div>
+          </nav>
     </header>
     <section>Novedades</section>
     <main>
@@ -49,6 +79,7 @@
         <div>INFO CONTACTO</div>
         <div>REDES</div>
     </footer>
+    <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
